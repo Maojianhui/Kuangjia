@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/titlebar"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>
+
+    <RadioGroup
+        android:gravity="center_vertical"
+        android:id="@+id/rg_main"
+        android:padding="5dp"
+        android:background="#11000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:text="@string/home"
+            android:drawableTop="@drawable/rb_home_drawable_selector"
+           style="@style/bottom_style" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            android:text="@string/community"
+            android:drawableTop="@drawable/rb_mail_drawable_selector"
+            style="@style/bottom_style" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:text="@string/message"
+            android:drawableTop="@drawable/rb_message_drawable_selector"
+            style="@style/bottom_style" />
+
+        <RadioButton
+            android:id="@+id/rb_person"
+            android:text="@string/myself"
+            android:drawableTop="@drawable/rb_myself_drawable_selector"
+            style="@style/bottom_style" />
+    </RadioGroup>
+
+</LinearLayout>
